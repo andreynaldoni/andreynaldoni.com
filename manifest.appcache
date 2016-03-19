@@ -1,0 +1,13 @@
+CACHE MANIFEST
+# 2016-03-18:v1
+
+CACHE:
+http://andreynaldoni.com/index.html
+http://andreynaldoni.com/favicon.ico
+http://andreynaldoni.com/css/*
+http://andreynaldoni.com/js/*
+http://andreynaldoni.com/img/*
+http://andreynaldoni.com/font/*
+
+NETWORK:
+*
