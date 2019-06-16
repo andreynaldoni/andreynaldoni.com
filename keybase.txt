@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/andreynaldoni
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://andreynaldoni.com
+  * I am andreynaldoni (https://keybase.io/andreynaldoni) on keybase.
+  * I have a public key ASBiq-79j9pY0NIn_GX5C0dD6lGBvT_1a323yKpmU_nu-wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012062abeefd8fda58d0d227fc65f90b4743ea5181bd3ff56b7db7c8aa6653f9eefb0a",
+      "host": "keybase.io",
+      "kid": "012062abeefd8fda58d0d227fc65f90b4743ea5181bd3ff56b7db7c8aa6653f9eefb0a",
+      "uid": "41f8c1f2f1c2f7349a34896186de1f19",
+      "username": "andreynaldoni"
+    },
+    "merkle_root": {
+      "ctime": 1560708802,
+      "hash": "ee96ab0df20f5f5cd726b482d2c90e0882eb0f503cf779007e0f0d50be0bfe981870e2d5f0f2986a69d7991b532373c9e4e733c3e73b25728aabff1bb661c7a6",
+      "hash_meta": "1d81334cfa38b11c302e805e706b039e40264cec47e0705e36a4b7688a5028c1",
+      "seqno": 5580770
+    },
+    "service": {
+      "entropy": "s9fT2IYL5Rq51g07BgSMCPpl",
+      "hostname": "andreynaldoni.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.1.0"
+  },
+  "ctime": 1560708865,
+  "expire_in": 504576000,
+  "prev": "e3a68515d6fdb448d29731b0c4b3456636500eda18b109c415bbc18fe78b39cd",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgYqvu/Y/aWNDSJ/xl+QtHQ+pRgb0/9Wt9t8iqZlP57vsKp3BheWxvYWTESpcCCMQg46aFFdb9tEjSlzGwxLNFZjZQDtoYsQnEFbvBj+eLOc3EIK0LsgsC/hcIYktmBpgT30nSd2QPJzbwr2OR2CIb63K+AgHCo3NpZ8RAfFvg6aI4K6s98fMffAHjjHvVNB1D5YTXytZHk8NZNINSQEi7zabC1gLIU4dCS/9HcmE4OHvNsf03ZtmMRSqzA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAdPBcAdaLhh+W5wxcL6W4fx9RlUmHNsQXqwV+O1tvk8o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/andreynaldoni
+
+==================================================================
