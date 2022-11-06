@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.js": "/andreynaldoni.com/static/js/main.ac387c94.js",
+    "main.js": "/andreynaldoni.com/static/js/main.58835a73.js",
     "static/js/541.69be363b.chunk.js": "/andreynaldoni.com/static/js/541.69be363b.chunk.js",
-    "static/js/675.f2817166.chunk.js": "/andreynaldoni.com/static/js/675.f2817166.chunk.js",
     "static/js/237.b8331e40.chunk.js": "/andreynaldoni.com/static/js/237.b8331e40.chunk.js",
     "index.html": "/andreynaldoni.com/index.html",
-    "main.ac387c94.js.map": "/andreynaldoni.com/static/js/main.ac387c94.js.map",
+    "main.58835a73.js.map": "/andreynaldoni.com/static/js/main.58835a73.js.map",
     "541.69be363b.chunk.js.map": "/andreynaldoni.com/static/js/541.69be363b.chunk.js.map",
-    "675.f2817166.chunk.js.map": "/andreynaldoni.com/static/js/675.f2817166.chunk.js.map",
     "237.b8331e40.chunk.js.map": "/andreynaldoni.com/static/js/237.b8331e40.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.ac387c94.js"
+    "static/js/main.58835a73.js"
   ]
 }
