@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/andreynaldoni.com/static/js/main.87773f36.js",
-    "static/js/541.69be363b.chunk.js": "/andreynaldoni.com/static/js/541.69be363b.chunk.js",
-    "static/js/675.f2817166.chunk.js": "/andreynaldoni.com/static/js/675.f2817166.chunk.js",
-    "static/js/237.b8331e40.chunk.js": "/andreynaldoni.com/static/js/237.b8331e40.chunk.js",
-    "index.html": "/andreynaldoni.com/index.html",
-    "main.87773f36.js.map": "/andreynaldoni.com/static/js/main.87773f36.js.map",
-    "541.69be363b.chunk.js.map": "/andreynaldoni.com/static/js/541.69be363b.chunk.js.map",
-    "675.f2817166.chunk.js.map": "/andreynaldoni.com/static/js/675.f2817166.chunk.js.map",
-    "237.b8331e40.chunk.js.map": "/andreynaldoni.com/static/js/237.b8331e40.chunk.js.map"
+    "main.js": "/static/js/main.3ecdd439.js",
+    "static/js/541.33fdd154.chunk.js": "/static/js/541.33fdd154.chunk.js",
+    "static/js/675.f2817166.chunk.js": "/static/js/675.f2817166.chunk.js",
+    "static/js/237.b8331e40.chunk.js": "/static/js/237.b8331e40.chunk.js",
+    "index.html": "/index.html",
+    "main.3ecdd439.js.map": "/static/js/main.3ecdd439.js.map",
+    "541.33fdd154.chunk.js.map": "/static/js/541.33fdd154.chunk.js.map",
+    "675.f2817166.chunk.js.map": "/static/js/675.f2817166.chunk.js.map",
+    "237.b8331e40.chunk.js.map": "/static/js/237.b8331e40.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.87773f36.js"
+    "static/js/main.3ecdd439.js"
   ]
 }
