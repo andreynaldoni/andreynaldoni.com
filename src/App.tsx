@@ -1,11 +1,15 @@
+import { lazy, Suspense } from 'react';
+
 import {
   ColorScheme,
   ColorSchemeProvider,
   MantineProvider,
 } from '@mantine/core';
 import { useColorScheme, useLocalStorage } from '@mantine/hooks';
+import Loading from 'components/Loading';
+const Home = lazy(() => import('pages/Home'));
 
-import Routes from 'routes';
+// import Routes from 'routes';
 
 const App = () => {
   const preferredColorScheme = useColorScheme();
@@ -30,7 +34,9 @@ const App = () => {
         withGlobalStyles
         withNormalizeCSS
       >
-        <Routes />
+        <Suspense fallback={<Loading />}>
+          <Home />
+        </Suspense>
       </MantineProvider>
     </ColorSchemeProvider>
   );
