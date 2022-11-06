@@ -1,0 +1,80 @@
+{
+  "short_name": "Andrey Naldoni",
+  "name": "<Andrey Naldoni/>",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo_60.png",
+      "type": "image/png",
+      "sizes": "60x60"
+    },
+    {
+      "src": "logo_70.png",
+      "type": "image/png",
+      "sizes": "70x70"
+    },
+    {
+      "src": "logo_76.png",
+      "type": "image/png",
+      "sizes": "76x76"
+    },
+    {
+      "src": "logo_120.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "logo_150.png",
+      "type": "image/png",
+      "sizes": "150x150"
+    },
+    {
+      "src": "logo_152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "logo_180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "logo_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo_196.png",
+      "type": "image/png",
+      "sizes": "196x196"
+    },
+    {
+      "src": "logo_200.png",
+      "type": "image/png",
+      "sizes": "200x200"
+    },
+    {
+      "src": "logo_310_150.png",
+      "type": "image/png",
+      "sizes": "310x150"
+    },
+    {
+      "src": "logo_320_460.png",
+      "type": "image/png",
+      "sizes": "320x460"
+    },
+    {
+      "src": "logo_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0091ea",
+  "background_color": "#ffffff"
+}
