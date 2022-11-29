@@ -4,13 +4,15 @@ import { Route, Routes as BrowserRoutes } from 'react-router-dom';
 import Loading from 'components/Loading';
 const Home = lazy(() => import('pages/Home'));
 const NotFound = lazy(() => import('pages/NotFound'));
+const CV = lazy(() => import('pages/CV'));
 
 const Routes = () => {
   return (
     <Suspense fallback={<Loading />}>
       <BrowserRoutes>
-        <Route index element={<Home />}></Route>
-        <Route path="*" element={<NotFound />}></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/cv" element={<CV />} />
+        <Route path="*" element={<NotFound />} />
       </BrowserRoutes>
     </Suspense>
   );

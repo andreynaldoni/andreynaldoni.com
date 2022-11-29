@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react';
+import { Suspense, useEffect } from 'react';
 
 import {
   ColorScheme,
@@ -7,22 +7,25 @@ import {
 } from '@mantine/core';
 import { useColorScheme, useLocalStorage } from '@mantine/hooks';
 import Loading from 'components/Loading';
-const Home = lazy(() => import('pages/Home'));
 
-// import Routes from 'routes';
+import Routes from 'routes';
 
 const App = () => {
   const preferredColorScheme = useColorScheme();
+
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
     key: 'mantine-color-scheme',
-    defaultValue: preferredColorScheme,
+    defaultValue: 'light',
     getInitialValueInEffect: true,
   });
 
   const toggleColorScheme = (value?: ColorScheme) =>
     setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
 
-  // useHotkeys([['mod+J', () => toggleColorScheme()]]);
+  useEffect(() => {
+    setColorScheme(preferredColorScheme);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [preferredColorScheme]);
 
   return (
     <ColorSchemeProvider
@@ -35,7 +38,7 @@ const App = () => {
         withNormalizeCSS
       >
         <Suspense fallback={<Loading />}>
-          <Home />
+          <Routes />
         </Suspense>
       </MantineProvider>
     </ColorSchemeProvider>

@@ -1,41 +1,25 @@
 import {
   AppShell,
+  Button,
   Container,
   Group,
-  Header,
   Image,
   Stack,
   Title,
 } from '@mantine/core';
-import DarkModeButton from 'components/DarkModeButton';
+import { IconDownload, IconFileSearch } from '@tabler/icons';
 import GitHubButton from 'components/GitHubButton';
+import HeaderNavbar from 'components/HeaderNavbar';
 import LinkedInButton from 'components/LinkedInButton';
 import MailButton from 'components/MailButton';
 import WhatsAppButton from 'components/WhatsAppButton';
-
-const sx = { height: '100%' };
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <AppShell
       // padding="md"
-      header={
-        <Header height={60}>
-          <Container sx={sx}>
-            <Group sx={sx} align="center" position="apart" noWrap>
-              <Title
-                weight={600}
-                order={3}
-                variant="gradient"
-                gradient={{ from: 'indigo', to: 'cyan' }}
-              >
-                &lt;Andrey Naldoni/&gt;
-              </Title>
-              <DarkModeButton />
-            </Group>
-          </Container>
-        </Header>
-      }
+      header={<HeaderNavbar />}
       // footer={
       //   <Footer height={60} py="md">
       //     <Container sx={sx}>
@@ -75,6 +59,23 @@ const Home = () => {
             <GitHubButton />
             <LinkedInButton />
             <WhatsAppButton />
+          </Group>
+          <Group position="center">
+            <Button
+              leftIcon={<IconDownload size={18} />}
+              component="a"
+              href="/CV_ANDREY_NALDONI.pdf"
+              download
+            >
+              Download resume
+            </Button>
+            <Button
+              leftIcon={<IconFileSearch size={18} />}
+              component={Link}
+              to="/cv"
+            >
+              View resume online
+            </Button>
           </Group>
         </Stack>
       </Container>
