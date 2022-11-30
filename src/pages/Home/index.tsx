@@ -52,7 +52,7 @@ const Home = () => {
           <Image
             width={256}
             radius={256}
-            src={process.env.PUBLIC_URL + '/img/Me.jpg'}
+            src={process.env.PUBLIC_URL + '/img/me.jpg'}
           />
           <Group>
             <MailButton />
