@@ -1,26 +1,26 @@
-import { Suspense, useEffect } from 'react';
+import { Suspense, useEffect } from "react";
 
 import {
   ColorScheme,
   ColorSchemeProvider,
   MantineProvider,
-} from '@mantine/core';
-import { useColorScheme, useLocalStorage } from '@mantine/hooks';
-import Loading from 'components/Loading';
+} from "@mantine/core";
+import { useColorScheme, useLocalStorage } from "@mantine/hooks";
+import Loading from "components/Loading";
 
-import Routes from 'routes';
+import Routes from "routes";
 
 const App = () => {
   const preferredColorScheme = useColorScheme();
 
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
-    key: 'mantine-color-scheme',
-    defaultValue: 'light',
+    key: "mantine-color-scheme",
+    defaultValue: "light",
     getInitialValueInEffect: true,
   });
 
   const toggleColorScheme = (value?: ColorScheme) =>
-    setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
+    setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
 
   useEffect(() => {
     setColorScheme(preferredColorScheme);

@@ -5,26 +5,34 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@mantine/core": "^5.7.1",
-    "@mantine/hooks": "^5.7.1",
+    "@emotion/react": "^11.11.1",
+    "@mantine/core": "^6.0.19",
+    "@mantine/hooks": "^6.0.19",
     "@tabler/icons": "^1.110.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
+    "@testing-library/jest-dom": "^6.0.1",
+    "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
-    "@types/jest": "^29.2.2",
-    "@types/node": "^18.11.9",
-    "@types/react": "^18.0.25",
-    "@types/react-dom": "^18.0.8",
-    "eslint-plugin-prettier": "^4.2.1",
-    "gh-pages": "^4.0.0",
-    "prettier": "^2.7.1",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.5.0",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "eslint-plugin-prettier": "^5.0.0",
+    "gh-pages": "^6.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.0",
+    "prettier": "^3.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.3",
+    "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.8.4",
-    "web-vitals": "^3.0.4"
+    "typescript": "4.8.4",
+    "web-vitals": "^3.4.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "npx prettier --write",
+      "npx eslint --fix"
+    ]
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,7 +40,9 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install",
+    "precommit": "lint-staged"
   },
   "eslintConfig": {
     "extends": [
@@ -51,31 +61,17 @@
       "no-duplicate-imports": "error",
       "quotes": [
         "error",
-        "single",
+        "double",
         {
           "avoidEscape": true,
           "allowTemplateLiterals": true
         }
       ],
-      "prefer-arrow-callback": "off",
-      "prettier/prettier": [
-        "error",
-        {
-          "singleQuote": true,
-          "tabWidth": 2,
-          "trailingComma": "es5"
-        }
-      ],
-      "semi": [
-        "error",
-        "always"
-      ]
+      "prefer-arrow-callback": "off"
     }
   },
   "prettier": {
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "es5"
+    "trailingComma": "all"
   },
   "browserslist": {
     "production": [
@@ -88,5 +84,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "eslintIgnore": [
+    "package.json",
+    "package-lock.json",
+    "tsconfig.json"
+  ]
 }

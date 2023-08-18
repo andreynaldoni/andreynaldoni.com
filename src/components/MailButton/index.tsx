@@ -1,5 +1,5 @@
-import { ActionIcon } from '@mantine/core';
-import { IconMail } from '@tabler/icons';
+import { ActionIcon } from "@mantine/core";
+import { IconMail } from "@tabler/icons";
 
 const MailButton = () => {
   return (

@@ -7,16 +7,16 @@ import {
   Paper,
   Title,
   Transition,
-} from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+} from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
 
 const HEADER_HEIGHT = 56;
 
 const useStyles = createStyles((theme) => ({
   dropdown: {
-    borderRight: 'unset',
-    borderLeft: 'unset',
-    position: 'absolute',
+    borderRight: "unset",
+    borderLeft: "unset",
+    position: "absolute",
     top: HEADER_HEIGHT,
     left: 0,
     right: 0,
@@ -24,48 +24,48 @@ const useStyles = createStyles((theme) => ({
     borderTopRightRadius: 0,
     borderTopLeftRadius: 0,
     borderTopWidth: 0,
-    overflow: 'hidden',
+    overflow: "hidden",
 
-    [theme.fn.largerThan('sm')]: {
-      display: 'none',
+    [theme.fn.largerThan("sm")]: {
+      display: "none",
     },
   },
 
   inner: {
     height: 56,
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
 
   links: {
-    [theme.fn.smallerThan('sm')]: {
-      display: 'none',
+    [theme.fn.smallerThan("sm")]: {
+      display: "none",
     },
   },
 
   burger: {
-    [theme.fn.largerThan('sm')]: {
-      display: 'none',
+    [theme.fn.largerThan("sm")]: {
+      display: "none",
     },
   },
 
   link: {
-    display: 'block',
+    display: "block",
     lineHeight: 1,
-    padding: '8px 12px',
+    padding: "8px 12px",
     borderRadius: theme.radius.sm,
-    textDecoration: 'none',
+    textDecoration: "none",
     color:
-      theme.colorScheme === 'dark'
+      theme.colorScheme === "dark"
         ? theme.colors.dark[0]
         : theme.colors.gray[7],
     fontSize: theme.fontSizes.sm,
     fontWeight: 500,
 
-    '&:hover': {
+    "&:hover": {
       backgroundColor:
-        theme.colorScheme === 'dark'
+        theme.colorScheme === "dark"
           ? theme.colors.dark[6]
           : theme.colors.gray[0],
     },
@@ -108,7 +108,7 @@ const Navbar = ({ links }: HeaderSearchProps) => {
             weight={600}
             order={3}
             variant="gradient"
-            gradient={{ from: 'indigo', to: 'cyan' }}
+            gradient={{ from: "indigo", to: "cyan" }}
           >
             &lt;Andrey Naldoni/&gt;
           </Title>

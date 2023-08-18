@@ -8,17 +8,17 @@ import {
   Text,
   Title,
   useMantineTheme,
-} from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
+} from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import {
-  IconDeviceMobile,
+  // IconDeviceMobile,
   IconMail,
   IconMapPin,
   IconWorld,
-} from '@tabler/icons';
-import HeaderNavbar from 'components/HeaderNavbar';
+} from "@tabler/icons";
+import HeaderNavbar from "components/HeaderNavbar";
 
-const textIcon = { display: 'flex', alignItems: 'center', gap: 4 };
+const textIcon = { display: "flex", alignItems: "center", gap: 4 };
 const iconSize = 14;
 
 const Contact = () => {
@@ -28,19 +28,19 @@ const Contact = () => {
   const contacts = [
     {
       icon: <IconMapPin size={iconSize} style={{ color }} />,
-      text: 'Sao Paulo, Brazil',
+      text: "Sao Paulo, Brazil",
     },
-    {
-      icon: <IconDeviceMobile size={iconSize} style={{ color }} />,
-      text: '+55 13 98175 0611',
-    },
+    // {
+    //   icon: <IconDeviceMobile size={iconSize} style={{ color }} />,
+    //   text: "+55 13 98175 0611",
+    // },
     {
       icon: <IconMail size={iconSize} style={{ color }} />,
-      text: 'andreynaldoni@gmail.com',
+      text: "andreynaldoni@gmail.com",
     },
     {
       icon: <IconWorld size={iconSize} style={{ color }} />,
-      text: 'andreynaldoni.com',
+      text: "andreynaldoni.com",
     },
   ];
 
@@ -110,7 +110,7 @@ const Skills = ({ title, skills }: SkillsProps) => {
 };
 
 const CV = () => {
-  const isMobile = useMediaQuery('(max-width: 767px)');
+  const isMobile = useMediaQuery("(max-width: 767px)");
 
   return (
     <>
@@ -118,28 +118,35 @@ const CV = () => {
       <Container
         my={40}
         sx={{
-          '@media print': {
+          "@media print": {
             margin: 0,
           },
         }}
       >
         <Flex>
-          <Flex direction="column" miw={isMobile ? '50%' : '70%'}>
+          <Flex direction="column" miw={isMobile ? "50%" : "70%"}>
             <Title weight={600} mb="xs">
               Andrey Naldoni
             </Title>
             <Title order={4} weight={400} sx={{ letterSpacing: 2 }} mb="xl">
-              Full-Stack Developer
+              Tech Lead
             </Title>
 
             <TitleSection>RECENT EXPERIENCE</TitleSection>
 
             <Experience
+              title="Software Development Manager"
+              date="Ago 2023 – Present"
+              company="Harpio"
+              activities={["TBD"]}
+            />
+
+            <Experience
               title="Full-Stack Developer"
-              date="Jan 2020 – Present"
+              date="Jan 2020 – Jul 2023"
               company="Claro Brazil"
               activities={[
-                'Developed and maintaining an onboarding app available for 20k new customers daily.',
+                "Developed and maintaining an onboarding app available for 20k new customers daily.",
               ]}
             />
 
@@ -148,9 +155,9 @@ const CV = () => {
               date="May 2017 – Dec 2019"
               company="Nextel Brazil"
               activities={[
-                'Integrated and maintained ANATEL (Equivalent to US FCC) Consumidor with Zendesk attending about 1k customers daily;',
-                'Designed and developed an anti-fraud system using biometrics validation with 70% efficiency;',
-                'Supported and guided 500+ automated process with more than $50 million estimated savings.',
+                "Integrated and maintained ANATEL (Equivalent to US FCC) Consumidor with Zendesk attending about 1k customers daily;",
+                "Designed and developed an anti-fraud system using biometrics validation with 70% efficiency;",
+                "Supported and guided 500+ automated process with more than $50 million estimated savings.",
               ]}
             />
 
@@ -159,9 +166,9 @@ const CV = () => {
               date="Nov 2014 – May 2017"
               company="Bematech S/A"
               activities={[
-                'Technical leadership of automation initiatives and the quality team;',
-                'Test architecture development using TDD (Test Driven Development) and KDT (Keyword Driven Development) resulting in a decrease of approximately 90% in the incidence of bugs and 70% in maintenance costs;',
-                'Automated data collection with real time results available in cloud.',
+                "Technical leadership of automation initiatives and the quality team;",
+                "Test architecture development using TDD (Test Driven Development) and KDT (Keyword Driven Development) resulting in a decrease of approximately 90% in the incidence of bugs and 70% in maintenance costs;",
+                "Automated data collection with real time results available in cloud.",
               ]}
             />
 
@@ -170,7 +177,7 @@ const CV = () => {
               date="Jun 2012 – Out 2014"
               company="Nortia IT"
               activities={[
-                'Developed and maintained new features in retail ERP system for Leroy Merlin.',
+                "Developed and maintained new features in retail ERP system for Leroy Merlin.",
               ]}
             />
 
@@ -179,7 +186,7 @@ const CV = () => {
               date="Jun 2011 – Dez 2011"
               company="Praia Grande City Hall"
               activities={[
-                'Digital inclusion project aimed at children, teenagers, elderly and people with special needs in public schools.',
+                "Digital inclusion project aimed at children, teenagers, elderly and people with special needs in public schools.",
               ]}
             />
 
@@ -188,40 +195,47 @@ const CV = () => {
               date="Jun 2010 – Dez 2010"
               company="Sao Paulo Government"
               activities={[
-                'Digital inclusion project aimed at students and teachers of state public schools, focusing on collaboration trough technology.',
+                "Digital inclusion project aimed at students and teachers of state public schools, focusing on collaboration trough technology.",
               ]}
             />
           </Flex>
-          <Flex direction="column" w={isMobile ? '50%' : '30%'} pl="lg">
+          <Flex direction="column" w={isMobile ? "50%" : "30%"} pl="lg">
             <Contact />
 
             <TitleSection>KEY SKILLS</TitleSection>
 
             <Skills
               title="Front-end"
-              skills={['React', 'Next.js', 'TypeScript', 'JavaScript']}
+              skills={["React", "Next.js", "TypeScript", "JavaScript"]}
             />
 
             <Skills
               title="Back-end"
-              skills={['Node.js', 'Express', 'NestJS', 'Python', 'Flask']}
+              skills={[
+                "Node.js",
+                "Express",
+                "Fastify",
+                "NestJS",
+                "Python",
+                "Flask",
+              ]}
             />
 
             <Skills
               title="Database"
               skills={[
-                'SQL',
-                'NoSQL',
-                'MySQL',
-                'PostgreeSQL',
-                'Oracle',
-                'MS SQL',
-                'MongoDB',
-                'Firestore',
+                "SQL",
+                "NoSQL",
+                "MySQL",
+                "PostgreeSQL",
+                "Oracle",
+                "MS SQL",
+                "MongoDB",
+                "Firestore",
               ]}
             />
 
-            <Skills title="Cloud" skills={['GCP', 'AWS']} />
+            <Skills title="Cloud" skills={["GCP", "AWS"]} />
 
             <TitleSection>LANGUAGES</TitleSection>
 

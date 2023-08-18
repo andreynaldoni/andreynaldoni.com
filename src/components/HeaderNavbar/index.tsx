@@ -1,12 +1,12 @@
-import { Container, Group, Header } from '@mantine/core';
-import DarkModeButton from 'components/DarkModeButton';
-import Logo from 'components/Logo';
+import { Container, Group, Header } from "@mantine/core";
+import DarkModeButton from "components/DarkModeButton";
+import Logo from "components/Logo";
 
-const sx = { height: '100%' };
+const sx = { height: "100%" };
 const noPrint = {
-  '@media print': {
+  "@media print": {
     margin: 0,
-    display: 'none',
+    display: "none",
   },
 };
 

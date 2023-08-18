@@ -9,19 +9,19 @@ import {
   Stack,
   Text,
   Title,
-} from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
-import { IconChevronRight, IconDownload, IconFileSearch } from '@tabler/icons';
-import { Link } from 'react-router-dom';
+} from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
+import { IconChevronRight, IconDownload, IconFileSearch } from "@tabler/icons";
+import { Link } from "react-router-dom";
 
-import GitHubButton from 'components/GitHubButton';
-import HeaderNavbar from 'components/HeaderNavbar';
-import LinkedInButton from 'components/LinkedInButton';
-import MailButton from 'components/MailButton';
-import WhatsAppButton from 'components/WhatsAppButton';
+import GitHubButton from "components/GitHubButton";
+import HeaderNavbar from "components/HeaderNavbar";
+import LinkedInButton from "components/LinkedInButton";
+import MailButton from "components/MailButton";
+// import WhatsAppButton from 'components/WhatsAppButton';
 
 const Home = () => {
-  const isMobile = useMediaQuery('(max-width: 767px)');
+  const isMobile = useMediaQuery("(max-width: 767px)");
   return (
     <AppShell
       // padding="md"
@@ -41,7 +41,7 @@ const Home = () => {
       styles={(theme) => ({
         main: {
           backgroundColor:
-            theme.colorScheme === 'dark'
+            theme.colorScheme === "dark"
               ? theme.colors.dark[8]
               : theme.colors.gray[0],
         },
@@ -58,13 +58,13 @@ const Home = () => {
           <Image
             width={256}
             radius={256}
-            src={process.env.PUBLIC_URL + '/img/me.jpg'}
+            src={process.env.PUBLIC_URL + "/img/me.jpg"}
           />
           <Group>
             <MailButton />
             <GitHubButton />
             <LinkedInButton />
-            <WhatsAppButton />
+            {/* <WhatsAppButton /> */}
           </Group>
           <Group position="center">
             <Button
@@ -91,13 +91,13 @@ const Home = () => {
             withBorder
             shadow="sm"
             sx={{
-              overflow: 'hidden',
+              overflow: "hidden",
             }}
           >
             <Group
               sx={{
-                display: 'flex',
-                flexDirection: isMobile ? 'column' : 'row',
+                display: "flex",
+                flexDirection: isMobile ? "column" : "row",
               }}
               spacing={0}
             >
@@ -105,11 +105,11 @@ const Home = () => {
                 component="a"
                 href="https://nextpic.app"
                 sx={{
-                  width: isMobile ? '100%' : '50%',
+                  width: isMobile ? "100%" : "50%",
                 }}
               >
                 <Image
-                  src={process.env.PUBLIC_URL + '/img/nextpic.jpg'}
+                  src={process.env.PUBLIC_URL + "/img/nextpic.jpg"}
                   fit="contain"
                   alt="NextPic.app"
                 />
@@ -117,9 +117,9 @@ const Home = () => {
               <Box
                 p="lg"
                 sx={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  width: isMobile ? '100%' : '50%',
+                  display: "flex",
+                  flexDirection: "column",
+                  width: isMobile ? "100%" : "50%",
                 }}
               >
                 <Title weight={600} mb="sm">
@@ -133,7 +133,7 @@ const Home = () => {
                   variant="link"
                   component="a"
                   href="https://nextpic.app"
-                  sx={{ display: 'flex' }}
+                  sx={{ display: "flex" }}
                   arial-label="NextPic.app website"
                   role="link"
                 >
@@ -141,9 +141,9 @@ const Home = () => {
                   <span
                     style={{
                       marginLeft: 4,
-                      display: 'flex',
-                      flexDirection: 'row',
-                      alignItems: 'center',
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
                     }}
                   >
                     <IconChevronRight size={22} />

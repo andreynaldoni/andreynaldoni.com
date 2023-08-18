@@ -1,11 +1,11 @@
-import { Box, Loader } from '@mantine/core';
+import { Box, Loader } from "@mantine/core";
 
 const sx = {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  height: '100vh',
-  width: '100vw',
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  height: "100vh",
+  width: "100vw",
 };
 
 const Loading = () => {

@@ -1,5 +1,5 @@
-import { ActionIcon } from '@mantine/core';
-import { IconBrandLinkedin } from '@tabler/icons';
+import { ActionIcon } from "@mantine/core";
+import { IconBrandLinkedin } from "@tabler/icons";
 
 const LinkedInButton = () => {
   return (

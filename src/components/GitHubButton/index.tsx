@@ -1,5 +1,5 @@
-import { ActionIcon } from '@mantine/core';
-import { IconBrandGithub } from '@tabler/icons';
+import { ActionIcon } from "@mantine/core";
+import { IconBrandGithub } from "@tabler/icons";
 
 const GitHubButton = () => {
   return (
